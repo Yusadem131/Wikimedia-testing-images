@@ -1,0 +1,88 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Default title",
+    "description": "Daily counts",
+    "version": "1.0"
+  },
+  "host": "wikitech.wikimedia.org",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Albert_Einstein/daily/2015100100/2015103100": {},
+    "/w/api.php": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "wikimedia",
+        "description": "Daily counts",
+        "operationId": "Getwikimedia",
+        "x-ms-visibility": "internal",
+        "parameters": [
+          {
+            "name": "action",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Wikimedia",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "abusefiltercheckmatch",
+            "x-ms-visibility": "internal",
+            "format": "html"
+          },
+          {
+            "name": "prop",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "iiprop",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "iimetadataversion",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/wiki/Special:MyLanguage/API:Main_page": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "parameters": [],
+        "summary": "to abuse filter check match",
+        "operationId": "GET",
+        "x-ms-visibility": "internal",
+        "description": "abusefiltercheckmatch"
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
